@@ -1,4 +1,3 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -43,10 +42,8 @@ class _HomePageState extends State<HomePage> {
                   onTap: () {
                     Navigator.pushNamed(context, '/detail');
                   },
-                  child: CachedNetworkImage(
-                    imageUrl:
-                        'http://static-hz.ealingbox.com/demo/images/ic1.jpg',
-                  ),
+                  child: Image.network(
+                      "http://static-hz.ealingbox.com/demo/images/ic1.jpg"),
                 ),
               ],
             ),

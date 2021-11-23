@@ -1,4 +1,3 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class DetailPage extends StatefulWidget {
@@ -41,16 +40,12 @@ class _DetailPageState extends State<DetailPage> {
               (content, index) {
                 return Column(
                   children: [
-                   /* Image.network(
+                    Image.network(
                         "http://static-hz.ealingbox.com/demo/images/ic1.jpg"),
                     Image.network(
                         "http://static-hz.ealingbox.com/demo/images/ic2.jpg"),
                     Image.network(
-                        "http://static-hz.ealingbox.com/demo/images/ic3.jpg"),*/
-
-                    CachedNetworkImage(imageUrl: 'http://static-hz.ealingbox.com/demo/images/ic1.jpg',),
-                    CachedNetworkImage(imageUrl: 'http://static-hz.ealingbox.com/demo/images/ic2.jpg',),
-                    CachedNetworkImage(imageUrl: 'http://static-hz.ealingbox.com/demo/images/ic3.jpg',),
+                        "http://static-hz.ealingbox.com/demo/images/ic3.jpg"),
                   ],
                 );
               },
